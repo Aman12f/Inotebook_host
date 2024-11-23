@@ -16,7 +16,7 @@ const corsOptions = {
     credentials: false, // Allow credentials (cookies, headers, etc.)
 };
 
-app.use(cors(corsOptions)); // Apply the CORS configuration
+app.use(cors()); // Apply the CORS configuration
 
 app.use(express.json())
 // Available routes
