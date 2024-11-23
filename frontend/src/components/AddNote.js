@@ -1,90 +1,3 @@
-// import React, { useState } from "react";
-// import NoteContext from "../context/notes/NoteContext";
-// import { useContext } from "react";
-
-// const AddNote = (props) => {
-//   const context = useContext(NoteContext);
-//   const { addNote, getNote } = context;
-//   const [note, setNote] = useState({ title: "", description: "", tag: "" });
-
-//   const handleClick = async (e) => {
-//     e.preventDefault();
-//     await addNote(note.title, note.description, note.tag);
-//     setNote({ title: "", description: "", tag: "" });
-//     getNote();
-//     props.showAlert("Note added successfully", "success");
-//   };
-
-//   const onChange = (e) => {
-//     setNote({ ...note, [e.target.name]: e.target.value });
-//   };
-
-//   return (
-//     <div className="container my-3">
-//       <h2>Add a Note</h2>
-//       <div className="my-3">
-//         <form>
-//           <div className="row">
-//             <div className="col-md-6 mb-3">
-//               <label htmlFor="title">Title</label>
-//               <input
-//                 type="text"
-//                 className="form-control"
-//                 id="title"
-//                 name="title"
-//                 placeholder="Enter title"
-//                 onChange={onChange}
-//                 minLength={5}
-//                 required
-//                 value={note.title}
-//               ></input>
-//             </div>
-//             <div className="col-md-6 mb-3">
-//               <label htmlFor="tag">Tag</label>
-//               <input
-//                 type="text"
-//                 className="form-control"
-//                 id="tag"
-//                 name="tag"
-//                 placeholder="Tag"
-//                 onChange={onChange}
-//                 minLength={5}
-//                 required
-//                 value={note.tag}
-//               ></input>
-//             </div>
-//           </div>
-//           <div className="mb-3">
-//             <label htmlFor="description">Description</label>
-//             <textarea
-//               className="form-control"
-//               id="description"
-//               name="description"
-//               rows="3"
-//               placeholder="Description"
-//               onChange={onChange}
-//               minLength={5}
-//               required
-//               value={note.description}
-//             ></textarea>
-//           </div>
-//           <button
-//             disabled={note.title.length < 5 || note.description.length < 5}
-//             type="submit"
-//             className="btn btn-primary"
-//             onClick={handleClick}
-//           >
-//             Add Note
-//           </button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default AddNote;
-
-
 
 import React, { useState, useContext } from "react";
 import NoteContext from "../context/notes/NoteContext";
@@ -124,7 +37,7 @@ const AddNote = () => {
         <form>
           <div className="row">
             <div className="col-md-6 mb-3">
-              <label htmlFor="title">Title</label>
+              <label htmlFor="title" className="form-label text-dark fw-bold">Title</label>
               <input
                 type="text"
                 className="form-control"
@@ -138,7 +51,7 @@ const AddNote = () => {
               />
             </div>
             <div className="col-md-6 mb-3">
-              <label htmlFor="tag">Tag</label>
+              <label htmlFor="tag" className="form-label text-dark fw-bold">Tag</label>
               <input
                 type="text"
                 className="form-control"
@@ -153,7 +66,7 @@ const AddNote = () => {
             </div>
           </div>
           <div className="mb-3">
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description" className="form-label text-dark fw-bold">Description</label>
             <textarea
               className="form-control"
               id="description"
