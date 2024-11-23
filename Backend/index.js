@@ -11,7 +11,8 @@ const app = express()
 const cors = require('cors');
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://inotebook-host.vercel.app'], // Localhost for development, Vercel domain for production
+    // origin: ['http://localhost:3000', 'https://inotebook-host.vercel.app'], // Localhost for development, Vercel domain for production
+    origin: '*', 
     credentials: true, // Allow credentials (cookies, headers, etc.)
 };
 
