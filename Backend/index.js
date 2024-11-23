@@ -13,10 +13,10 @@ const cors = require('cors');
 const corsOptions = {
     // origin: ['http://localhost:3000', 'https://inotebook-host.vercel.app'], // Localhost for development, Vercel domain for production
     origin: '*', 
-    credentials: false, // Allow credentials (cookies, headers, etc.)
+    credentials: true, // Allow credentials (cookies, headers, etc.)
 };
 
-app.use(cors()); // Apply the CORS configuration
+app.use(cors(corsOptions)); // Apply the CORS configuration
 
 app.use(express.json())
 // Available routes
