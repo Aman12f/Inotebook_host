@@ -12,7 +12,7 @@ app.use(express.json())
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 app.get('/aman', (req, res) => { 
-  res.send('hello aman hope you are consistend until you get internship ')
+  res.send('hello aman hope you are consistent until you get internship ')
 })
 
 app.listen(port, () => {
