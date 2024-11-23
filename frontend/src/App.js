@@ -19,7 +19,6 @@ function App() {
           <ToastContainer position="top-right" autoClose={3000} />
           <div className="container">
             <Routes>
-              {/* Removed showAlert prop and now using toast directly in components */}
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/login" element={<Login />} />

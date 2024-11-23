@@ -2,11 +2,21 @@ const connectToMongo = require('./db')
 connectToMongo();
 
 const express = require('express')
-var cors = require('cors')
-const app = express()
 const port = 5000
+const app = express()
+// var cors = require('cors')
 
-app.use(cors())
+// app.use(cors())
+
+const cors = require('cors');
+
+const corsOptions = {
+    origin: ['http://localhost:3000', 'https://inotebook-host.vercel.app'], // Localhost for development, Vercel domain for production
+    credentials: true, // Allow credentials (cookies, headers, etc.)
+};
+
+app.use(cors(corsOptions)); // Apply the CORS configuration
+
 app.use(express.json())
 // Available routes
 app.use('/api/auth',require('./routes/auth'))
