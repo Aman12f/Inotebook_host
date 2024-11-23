@@ -11,7 +11,7 @@ app.use(express.json())
 // Available routes
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
-app.get('/aman', (req, res) => { 
+app.get('/', (req, res) => { 
   res.send('hello aman hope you are consistent until you get internship ')
 })
 
