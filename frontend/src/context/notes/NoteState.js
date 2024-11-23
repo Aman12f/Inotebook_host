@@ -4,7 +4,8 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  // const host = "http://localhost:5000";
+  const host = "https://inotebook-host-backend.vercel.app/";
   const notesInitial = [];
 
   const [notes, setNotes] = useState(notesInitial);
