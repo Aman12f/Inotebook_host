@@ -36,7 +36,7 @@ A **MERN Stack Note-Keeper Application** inspired by Google Keep. iNotebook allo
 
 ### Frontend:
 - **React.js**
-- **CSS** / **TailwindCSS** for styling
+- **CSS** / **Bootstrap** for styling
 - **React-toastify** for error notifications
 - **React-pagination** for pagination functionality
 
@@ -155,5 +155,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 For any inquiries, reach out at:
-- **Email:** your.email@example.com
+- **Email:** aman.motghare2024@gmail.com
 - **GitHub:** [Aman12f](https://github.com/Aman12f)
