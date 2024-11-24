@@ -1,6 +1,5 @@
 # iNotebook
-[Live Link to Application](https://inotebook-host.vercel.app/)\n
-[Live Link to Portfolio](https://portfolio3-d-gray.vercel.app)
+[Live Link to Application](https://inotebook-host.vercel.app/)
 
 A **MERN Stack Note-Keeper Application** inspired by Google Keep. iNotebook allows users to add, edit, and manage notes in a seamless, visually appealing, and user-friendly interface. Designed to demonstrate originality, robust error handling, and aesthetic creativity.
 
