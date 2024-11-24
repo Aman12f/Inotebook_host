@@ -51,8 +51,8 @@ const NoteState = (props) => {
         return newNotes.sort((a, b) => b.pinned - a.pinned);
       });
 
-      // toast.success(updatedNote.pinned ? "Note pinned!" : "Note unpinned!");
-      toast.info(updatedNote.pinned ? "Note unpinned" : "Note pinned");
+      toast.info(updatedNote.pinned ? "Note pinned!" : "Note unpinned!");
+      // toast.info(updatedNote.pinned ? "Note unpinned" : "Note pinned");
     } catch (error) {
       toast.error("Failed to toggle pin status!");
       console.error(error);
