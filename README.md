@@ -1,5 +1,4 @@
 # iNotebook
-
 [Live Link to Application](https://inotebook-host.vercel.app/)
 [Live Link to Portfolio](https://portfolio3-d-gray.vercel.app)
 
